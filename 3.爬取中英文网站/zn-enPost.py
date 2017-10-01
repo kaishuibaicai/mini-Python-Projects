@@ -15,17 +15,11 @@ en_text = soup.select(".qh_en")
 en_Post = ' '
 #print (en_text)
 for i in zg_text:
-	#print (i.encode('utf-8'))
-	#print a
-	#time.sleep(0.1)
-	#print (i.get_text())
-	#a += 1
-	zg_Post += i.get_text()
+	zg_Post += i.get_text().encode('utf-8')
 for m in en_text: 
-	print (type(m.get_text()))
-	en_Post += str(m.get_text())
+	en_Post += m.get_text().encode('utf-8')
 print zg_Post
-print type(en_Post)
+
 print en_Post
 #text = soup.get_text(strip=True)
 #print (text)
