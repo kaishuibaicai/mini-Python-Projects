@@ -20,7 +20,11 @@ for i in zg_text:
 for m in en_text: 
 	en_Post += m.get_text().encode('utf-8')
 print zg_Post
-print en_Post
+#print en_Post
+En_Post = en_Post.decode("utf-8")
+filtrate = re.compile(u'[^\u4E00-\u9FA5]')#非中文
+nEn_Post = filtrate.sub(r'', En_Post)#replace
+print nEn_Post.encode('utf-8')
 #print sent_tokenize(en_Post,"english")
 #text = soup.get_text(strip=True)
 #print (text)
