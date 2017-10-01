@@ -1,6 +1,7 @@
 #-- coding:utf-8 --
 import urllib
-import nltk
+import re
+from nltk.tokenize import sent_tokenize
 from bs4 import BeautifulSoup
 import time
 
@@ -19,7 +20,7 @@ for i in zg_text:
 for m in en_text: 
 	en_Post += m.get_text().encode('utf-8')
 print zg_Post
-
 print en_Post
+#print sent_tokenize(en_Post,"english")
 #text = soup.get_text(strip=True)
 #print (text)
