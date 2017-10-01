@@ -7,7 +7,9 @@ response = urllib.urlopen('http://www.kekenet.com/read/201709/526460.shtml')
 html = response.read()
 soup = BeautifulSoup(html, "lxml")
 for i in soup.select(".qh_zg"):
-	print (i.encode('utf-8').get_text(strip=True))
-print (soup.select(".qh_en"))
+	print (i.get_text())
+for m in soup.select(".qh_en"): 
+	print (m.get_text())
+
 #text = soup.get_text(strip=True)
 #print (text)
