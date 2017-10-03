@@ -15,7 +15,7 @@ sql = """CREATE TABLE EMPLOYEE (
          SEX CHAR(1),
          INCOME FLOAT )"""
 #cur.execute(createTable)
-#cur.execute(sql) 
+#cur.execute(sql)  
 cur.execute('insert into znEnPostTest (postTitle) values (%s)', ['post1'])
 cur.execute('insert into znEnPostTest (postTitle) values (%s)', ['post1'])
 conn.commit()
