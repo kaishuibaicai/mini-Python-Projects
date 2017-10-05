@@ -31,8 +31,8 @@ print en_Post
 zn_Post = zn_Post.decode('gbk').encode('utf-8')
 en_Post = en_Post.decode('gbk').encode('utf-8')
 
-conn = pymysql.connect(host="127.0.0.1", user='root', passwd='root', db='zn-enpost',charset="utf8")
+conn = pymysql.connect(host="127.0.0.1", user='root', passwd='root', db='zn-enpost',charset='utf8')
 cur = conn.cursor()
-cur.execute('insert ignore into znEnPost (postTitle, EnText, ZnText) values (%s, %s, %s)', [postTitle, en_Post, zn_Post])
+cur.execute('insert ignore into znenpost (postTitle, EnText, ZnText) values (%s, %s, %s)', [postTitle, en_Post, zn_Post])
 conn.commit()
 cur.close()
