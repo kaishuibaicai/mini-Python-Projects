@@ -33,6 +33,6 @@ print nEn_Post.encode('utf-8')
 
 conn = pymysql.connect(host="127.0.0.1", user='root', passwd='root', db='zn-enpost')
 cur = conn.cursor()
-cur.execute('insert into znEnPost (postTitle, Entext, ZnText) values (%s, %s, %s)', [postTitle, en_Post, zn_Post])
+cur.execute('insert ignore into znEnPost (postTitle, Entext, ZnText) values (%s, %s, %s)', [postTitle, en_Post, zn_Post])
 conn.commit()
 cur.close()
