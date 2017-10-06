@@ -1,6 +1,5 @@
 #-- coding:utf-8 --
 import urllib
-import re
 from bs4 import BeautifulSoup
 import pymysql
 import time
