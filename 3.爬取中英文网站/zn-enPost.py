@@ -1,11 +1,14 @@
 #-- coding:utf-8 --
 import urllib
 import re
-from nltk.tokenize import sent_tokenize
 from bs4 import BeautifulSoup
 import pymysql
 
-response = urllib.urlopen('http://www.kekenet.com/read/201709/526460.shtml')
+base = 'http://www.kekenet.com'
+task = '/read/201710/526886.shtml'
+
+
+response = urllib.urlopen(base+task)
 html = response.read()
 soup = BeautifulSoup(html, "lxml")
 
@@ -23,13 +26,12 @@ for i in zn_text:
 for m in en_text: 
 	en_Post += m.get_text()
 
-print type(zn_Post)
-print type(en_Post)
-print zn_Post
-print en_Post
 
 zn_Post = zn_Post.decode('gbk').encode('utf-8')
-en_Post = en_Post.decode('gbk').encode('utf-8')
+en_Post = en_Post[:-25].decode('gbk').encode('utf-8')
+
+
+
 
 conn = pymysql.connect(host="127.0.0.1", user='root', passwd='root', db='zn-enpost',charset='utf8')
 cur = conn.cursor()
