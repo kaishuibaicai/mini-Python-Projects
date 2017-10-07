@@ -54,7 +54,8 @@ try:
 		cur.execute('insert ignore into znenpost (postTitle, EnText, ZnText) values (%s, %s, %s)', [Result[0], Result[1], Result[2]])
 		print ('已经保存到数据库')
 		task = Result[3]
-		#time.sleep(0.5)
+		#time.sleep(0.5)  
+
 finally:
 	conn.commit()
 	cur.close()
