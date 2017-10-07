@@ -100,7 +100,6 @@
    conn = pymysql.connect(host="127.0.0.1", user='root', passwd='root', db='zn-enpost', charset='utf8')
    cur = conn.cursor()
 
-
    #数据爬取，并且保存到数据库
    try:
    	while 1:
@@ -109,9 +108,10 @@
    		print ('已经保存到数据库')
    		task = Result[3]
    		#time.sleep(0.5)  
-   		
+
    finally:
    	conn.commit()
    	cur.close()
-
    ```
+
+
