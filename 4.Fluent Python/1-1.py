@@ -26,7 +26,7 @@ print deck[1]
 print choice(deck)
 print deck[:3]
 print deck[12::13]
-print '--------------------------'
+print '--------------------------' 
 for card in deck:
 	print card
 print '--------------------------'
@@ -40,3 +40,5 @@ def spades_high(card):
 print '--------------------------'
 for card in sorted(deck, key=spades_high):
 	print card
+
+fight!
