@@ -9,3 +9,5 @@ reviews = pd.read_csv('ign.csv')
 reviews = reviews.iloc[:,1:]   # 去掉无用的第一列
 
 print reviews.head()
+print reviews.index
+print reviews.loc[:5, 'score']
