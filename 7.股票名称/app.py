@@ -1,14 +1,10 @@
 #-- coding:utf-8 --
 import urllib
 from bs4 import BeautifulSoup
-import pymysql
-import time
-
 
 try:
 	f = open("numList.txt")             # 返回一个文件对象
 	nums = f.readlines()            # 调用文件的 readline()方法
-	
 	 
 	for num in nums:
 		num = num.strip()
