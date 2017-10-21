@@ -14,7 +14,6 @@ try:
 		response = urllib.urlopen(url)
 		html = response.read()
 		soup = BeautifulSoup(html, "lxml")
-
 		name = soup.select(".bets-name")[0].get_text().decode('gbk', 'ignore').encode('utf-8').strip()[:-8]
 		print name
 		with open("nameList.txt", 'a+') as s:
