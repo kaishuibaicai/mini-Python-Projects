@@ -21,4 +21,4 @@ try:
 	
 finally:
 	if f:
-		f.close()ai
+		f.close()
