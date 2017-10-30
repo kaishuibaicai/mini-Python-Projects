@@ -5,3 +5,4 @@
 3.[机器学习中的模型和数据](https://segmentfault.com/a/1190000007423515)
 4.[批量梯度下降介绍](https://hbfs.wordpress.com/2012/04/24/introduction-to-gradient-descent/)
 5.[So we beat on, boats against the current, borne back ceaselessly into the past. ](九月)
+6.
