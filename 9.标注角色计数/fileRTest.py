@@ -2,7 +2,7 @@
 import os
 path = "C:\Users\Administrator\Desktop\huoying-zl"
 dirs = os.listdir(path)
-s = []
+
 
 for Dir in dirs:
 	if not os.path.isdir(Dir):
