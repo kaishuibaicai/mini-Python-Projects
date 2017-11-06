@@ -1,10 +1,14 @@
 # coding:utf-8
 import os
 path = "C:\Users\Administrator\Desktop\huoying-zl"
-files = os.listdir(path)
+dirs = os.listdir(path)
 s = []
 
-for file in files:
-	print file
+for Dir in dirs:
+	if not os.path.isdir(Dir):
+		print '[' + Dir + ']'
+		files = os.listdir(path + '/' + Dir)
+		for file in files:
+			print file
 	#if not os.path.isdir(file):
 	#	f = open(path + '/' + file)
