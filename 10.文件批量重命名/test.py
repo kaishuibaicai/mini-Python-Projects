@@ -2,5 +2,8 @@
 #     if month < 10 :
 #         month = '0{}'.format(month)
 #     print month
-a = 596
-print '%08d' % a
+# a = 596
+# print '%08d' % a
+import os
+
+

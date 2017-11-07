@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
+
+path = "C:\Users\Administrator\Desktop\missions\huoying\Preprocessing\Preprocessing\Image\\new"
+dirs = os.listdir(path)
+
 path = 'D:\\图片\\'
 for file in os.listdir(path):
     if os.path.isfile(os.path.join(path,file))==True:
