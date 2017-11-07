@@ -1,6 +1,6 @@
 # coding:utf-8
 import os
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import urllib
 

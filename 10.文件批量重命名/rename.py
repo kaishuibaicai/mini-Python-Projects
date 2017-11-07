@@ -15,5 +15,4 @@ for dir in dirs:
 
 
 
-	with open("huoyingthename.txt", 'a+') as s:
-			s.write(name + '\n')
+	
