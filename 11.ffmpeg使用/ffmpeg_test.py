@@ -1,4 +1,4 @@
-
+ import os, subprocess
 # 抽帧
 def cut_one_piece():
     path = 'F:\\AI\\预处理视频\\海贼王\\Theater version'
