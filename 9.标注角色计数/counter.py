@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup
 import urllib
 
-path = "C:\Users\Administrator\Desktop\yinshi-zl"
+path = "C:\Users\Administrator\Desktop\huoying-zl"
 dirs = os.listdir(path)
 nameSets = []
 name_counts = {}
@@ -21,8 +21,9 @@ for Dir in dirs:
 			names = soup.select("name")
 
 			for name in names:
-				nameSets.append(name.get_text())
-			print 'Done'
+				if name.get_text().endswith('-head'):
+					nameSets.append(name.get_text())
+					print 'Done'
 
 for n in nameSets:
     if name_counts.has_key(n):
@@ -30,4 +31,4 @@ for n in nameSets:
     else:
         name_counts[n] = 1
 for item in name_counts:
-	print item, name_counts[item]
+	print item[:-5], name_counts[item]
