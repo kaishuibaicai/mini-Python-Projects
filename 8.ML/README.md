@@ -7,4 +7,5 @@
 5.[So we beat on, boats against the current, borne back ceaselessly into the past. ](九月)
 6.[Anaconda使用总结](http://www.jianshu.com/p/2f3be7781451)
 
-7.[]()
+7.[anaconda2 打开jupyter Notebook及简单使用](http://blog.csdn.net/xidianliutingting/article/details/53580569)
+
