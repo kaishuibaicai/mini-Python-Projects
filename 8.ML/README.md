@@ -9,3 +9,5 @@
 
 7.[anaconda2 打开jupyter Notebook及简单使用](http://blog.csdn.net/xidianliutingting/article/details/53580569)
 
+8.[稀疏矩阵存储格式总结+存储效率对比:COO,CSR,DIA,ELL,HYB](http://www.cnblogs.com/xbinworld/p/4273506.html)
+
