@@ -16,6 +16,7 @@ import threading
 from datetime import datetime as dt
 from multiprocessing.dummy import Pool
 from multiprocessing import Queue
+import io
 
 
 class BaiduImgDownloader(object):
@@ -125,7 +126,7 @@ class BaiduImgDownloader(object):
 
     def __log(self):
         """控制台输出，加锁以免被多线程打乱"""
-        with open(self.logFile, "w", encoding = "utf-8") as f:
+        with io.open(self.logFile, "w", encoding = "utf-8") as f:
             while True:
                 message = self.messageQueue.get()
                 if message == self.QUIT:
@@ -173,7 +174,7 @@ class BaiduImgDownloader(object):
         maxNum = int(results[0]) if results else 0
         urls = [url.format(word=word, pn=x)
                 for x in range(0, maxNum + 1, 60)]
-        with open(self.jsonUrlFile, "w", encoding="utf-8") as f:
+        with io.open(self.jsonUrlFile, "w", encoding="utf-8") as f:
             for url in urls:
                 f.write(url + "\n")
         return urls
