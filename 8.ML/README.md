@@ -11,3 +11,6 @@
 
 8.[稀疏矩阵存储格式总结+存储效率对比:COO,CSR,DIA,ELL,HYB](http://www.cnblogs.com/xbinworld/p/4273506.html)
 
+9.[visualization](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
+
+10.[mglearn未定义的解决办法](https://github.com/amueller/mglearn)
