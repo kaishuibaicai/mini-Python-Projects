@@ -25,7 +25,7 @@ def cut_image(resource_path, output_file_path, output_record):
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
     record.close()
 
-rp = 'E:\quanyecha\5\5'
-op = 'E:\quanyecha\5\5'
+rp = 'E:\quanyecha'
+op = 'E:\quanyecha'
 rc = 'nameList'
 cut_image(rp, op, rc)
