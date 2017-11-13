@@ -1,4 +1,5 @@
-import so, subprocess
+# -*- coding: utf-8 -*-
+import os, subprocess
 # 抽帧, 输入：原视频文件夹，输出目录，输出重命名记录
 def cut_image(resource_path, output_file_path, output_record):
     record = open(output_record, 'w', encoding='utf-8')
