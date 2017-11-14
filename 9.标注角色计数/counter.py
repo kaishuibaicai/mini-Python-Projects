@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup
 import urllib
 
-path = "C:\Users\Administrator\Desktop\quanyecha-zl"
+path = "C:\Users\Administrator\Desktop\longzhu-all"
 dirs = os.listdir(path)
 nameSets = []
 name_counts = {}
