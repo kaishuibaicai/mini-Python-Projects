@@ -32,5 +32,3 @@ for n in nameSets:
         name_counts[n] = 1
 for item in name_counts:
 	print item[:-5], name_counts[item]
-
-print "hello"
