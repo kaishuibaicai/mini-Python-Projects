@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-path = "C:\Users\Administrator\Desktop\missions\huoying\Preprocessing\Preprocessing\Image\\new"
+path = "C:\Users\Administrator\Desktop\cosplay-筛选"
 dirs = os.listdir(path)
 
 for dir in dirs:
