@@ -13,7 +13,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         index += 1
 
-        pre_file_name = 'mgdm_characterDetectionAI_Origin_Video_20171114_%08d_00' % index
+        pre_file_name = 'mgdm_characterDetectionAI_Origin_Video_20171115_%08d_00' % index
         output_path = os.path.join(output_file_path, pre_file_name)
 
         record.write('%s\t%s\n' % (file, pre_file_name))
@@ -21,12 +21,12 @@ def cut_image(resource_path, output_file_path, output_record):
         os.mkdir(output_path)
         os.chdir(output_path)
 
-        output_file_name = pre_file_name + '_Preprocessing_20171114_%08d_00.jpg'
+        output_file_name = pre_file_name + '_Preprocessing_20171115_%08d_00.jpg'
 
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
     record.close()
  
-rp = 'E:\quanyecha'
-op = 'E:\quanyecha'
+rp = 'E:\huoying-new2'
+op = 'E:\huoying-new2'
 rc = 'nameList'
 cut_image(rp, op, rc)
