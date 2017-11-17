@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-path = "C:\Users\Administrator\Desktop\data\\20171027\\20171027\label_results"
+path = "C:\Users\Administrator\Desktop\cosplay"
 dirs = os.listdir(path)
 
 for dir in dirs:
