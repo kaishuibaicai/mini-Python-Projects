@@ -14,4 +14,4 @@ for dir in dirs:
 	    
 	    print newname, 'Done'
 
-	n = n + 1
+	n = n + 1 
