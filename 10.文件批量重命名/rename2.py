@@ -14,6 +14,6 @@ for dir in dirs:
 		    newname = file[0:87]  + '_label_20171117_00_00' + '.xml'
 		    #newname = '%02d_' % n +  file
 		    os.rename(path + '\\' + dir + '\\' + file, path + '\\' + dir + '\\' + newname)
-			
+
 
 	n = n + 1 
