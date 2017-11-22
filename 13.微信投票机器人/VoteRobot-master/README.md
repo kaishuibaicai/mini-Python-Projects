@@ -78,3 +78,7 @@ S商城只能判断`OpenID`是否出现了重复，但是却无法校验`OpenID`
 - 要求投票用户在投票活动举办方的网站上进行注册（手机号验证、实名验证）
 
 不管采用这两种方式中的哪一种，本文中的“刷票”方法就完全失效了。
+
+
+# 参考资料
+1.[Python设置http的header请求访问URL](http://blog.csdn.net/arterforyou1206/article/details/43827527)
