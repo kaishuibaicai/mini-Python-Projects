@@ -3,8 +3,8 @@ import os
 import shutil
 L = []
 
-pathR = "C:\Users\Administrator\Desktop\cosplay1112\cosplay12\cosplay12\chunli"
-pathL = "C:\Users\Administrator\Desktop\cosplay1112\cosplay12\cosplay12\chunli"
+pathR = "C:\Users\Administrator\Desktop\cosplay1112\paojie"
+pathL = "C:\Users\Administrator\Desktop\cosplay1112\paojie"
 
 filesL = os.listdir(pathL)
 for file in filesL:
