@@ -3,7 +3,7 @@ import os
 import shutil
 L = []
 pathR = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
-pathL = "C:\Users\Administrator\Desktop\cosData\label_result"
+pathL = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
 
 filesL = os.listdir(pathL)
 for file in filesL:

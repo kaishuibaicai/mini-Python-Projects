@@ -9,7 +9,7 @@ import os
 
 name = 'mgdm_characterDetectionAI_Origin_Video_20171027_00000001_00_Preprocessing_20171027_00000001_00_label_20171027_00_00.xml'
 nwme = 'mgdm_characterDetectionAI_Origin_Video_20171027_00000001_00_Preprocessing_20171027_00000001_00.jpg'
-n = '01_mgdm_relevantCharacterAI_Origin_Image_20171116_00000002_00_Preprocessing_20171116_00_label_20171117_00_00.xml'
+n = 'cartoon_relevantCharacterAI_Origin_Image_20171122_00004462_00_Preprocessing_20171122_00.jpg'
 l = 'mgdm_characterDetectionAI_Origin_Video_20171027_00000001_00_Preprocessing_20171027_00000001_00'
 # print len(l)
 # print l[0:95]
