@@ -2,6 +2,7 @@
 import os
 import shutil
 L = []
+R = []
 pathR = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
 pathL = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
 
@@ -11,11 +12,16 @@ for file in filesL:
 print L
 filesR = os.listdir(pathR)
 for file in filesR:
-	if file[0:87] not in L:
-		print "hey:"
-		#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
-		os.remove(pathR + '\\' + file)
-		print file
+	R.append(file[0:87])
+
+
+print len(L)
+print len(R)
+	# if file[0:87] not in L:
+	# 	print "hey:"
+	# 	#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
+	# 	os.remove(pathR + '\\' + file)
+	# 	print file
 #print L
 # for dir in dirs:
 # 	#with open("C:\Users\Administrator\Desktop\DirList.txt", 'a+') as s:
