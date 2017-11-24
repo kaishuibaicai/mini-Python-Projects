@@ -8,8 +8,8 @@ pathL = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
 
 filesL = os.listdir(pathL)
 for file in filesL:
-	if file.endswith('xml')
-	L.append(file[0:87])  
+	if file.endswith('xml'):
+		L.append(file[0:87])
 
 filesR = os.listdir(pathR)
 for file in filesR:
