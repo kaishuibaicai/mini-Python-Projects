@@ -8,10 +8,11 @@ pathL = "C:\Users\Administrator\Desktop\cosplay1112\luotianyi"
 filesL = os.listdir(pathL)
 for file in filesL:
 	L.append(file[0:87])  
-
+print L
 filesR = os.listdir(pathR)
 for file in filesR:
 	if file[0:87] not in L:
+		print "hey:"
 		#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
 		os.remove(pathR + '\\' + file)
 		print file
