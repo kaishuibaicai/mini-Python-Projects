@@ -5,8 +5,8 @@ from HttpMD5Util import buildMySign,httpGet,httpPost
 
 class OKCoinSpot:
 
-    def __init__(self,url,apikey,secretkey):
-        self.__url = url
+    def __init__(self,url,apikey,secretkey): 
+        self.__url = urlm
         self.__apikey = apikey
         self.__secretkey = secretkey
 

@@ -27,7 +27,7 @@ def send_req(url):
     #print data
     #print type(data)
     #print data
-url='http://weixinmp.fjedu.gov.cn/vote/31/408/item?from=timeline&code=013rxTOz1EN0Rd06W7Rz1bwXOz1rxTOq'
+url='http://www.baidu.com/search/error.html'
 if __name__=="__main__":
     socket.setdefaulttimeout(2)
     send_req(url)
