@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#用于访问OKCOIN 现货REST API
+#用于访问OKCOIN 现货REST AP
 from HttpMD5Util import buildMySign,httpGet,httpPost
 
 class OKCoinSpot:
