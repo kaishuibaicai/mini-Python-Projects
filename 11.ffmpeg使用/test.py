@@ -12,7 +12,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         index += 1
 
-        pre_file_name = 'cartoon_characterDetectionAI_Origin_Video_20171129_0000060' + '%d' % index + '_00'
+        pre_file_name = 'cartoon_characterDetectionAI_Origin_Video_20171129_0000070' + '%d' % index + '_00'
         output_path = os.path.join(output_file_path, pre_file_name)
         with open("E:\\nameList.txt", 'a+') as s:
             s.write('%s\t%s\n' % (file, pre_file_name))
@@ -24,7 +24,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
  
-rp = 'E:\pannideluluxiu'
-op = 'E:\pannideluluxiu'
+rp = 'E:\shenqibaobei'
+op = 'E:\shenqibaobei'
 rc = 'nameList'
 cut_image(rp, op, rc)
