@@ -14,7 +14,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         pre_file_name = 'cartoon_characterDetectionAI_Origin_Video_20171129_0000060' + '%d' % index + '_00'
         output_path = os.path.join(output_file_path, pre_file_name)
-        with open("E:\nameList.txt", 'a+') as s:
+        with open("E:\\nameList.txt", 'a+') as s:
             s.write('%s\t%s\n' % (file, pre_file_name))
 
         os.mkdir(output_path)
