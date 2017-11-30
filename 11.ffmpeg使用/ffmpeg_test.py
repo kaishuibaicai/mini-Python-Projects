@@ -1,9 +1,9 @@
  import os, subprocess
 # 抽帧
 def cut_one_piece():
-    path = 'C:\Users\Administrator\Desktop\missions\huoying\Preprocessing\Preprocessing\Image\\new'
+    path = 'E:\juren buchong'
 
-    output_file_path = 'C:\Users\Administrator\Desktop\missions\huoying\Preprocessing\Preprocessing\Image\\new\mgdm_characterDetectionAI_Origin_Video_20171106_00000067'
+    output_file_path = 'E:\juren buchong'
     # files = os.listdir(path)
 
     # file_name = 'mgdm_mgAI_Origin_Video_1506689951_00000001.mp4'
