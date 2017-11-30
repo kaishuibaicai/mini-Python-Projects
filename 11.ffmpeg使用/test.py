@@ -20,7 +20,7 @@ def cut_image(resource_path, output_file_path, output_record):
         os.mkdir(output_path)
         os.chdir(output_path)
 
-        output_file_name = pre_file_name + '_Preprocessing_20171129_%08d_00.jpg'
+        output_file_name = pre_file_name + '_Preprocessing_20171130_%08d_00.jpg'
 
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
  
