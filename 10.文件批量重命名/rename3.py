@@ -10,7 +10,7 @@ for file in os.listdir(path):
 	    
 	if file.endswith('.jpg'):    
 		#newname = 'mgdm_relevantCharacterAI_Origin_Image_20171116_' + '%08d' % n + '_00_Preprocessing_20171116_00.jpg'
-		newname = file[0:83] + '22' + file[85:]
+		newname = file[0:48] + '22' + file[50:83] + '22' + file[85:]
 		os.rename(path + '\\' + file, path  + '\\' + newname)
 		    
 		print newname, 'Done'
