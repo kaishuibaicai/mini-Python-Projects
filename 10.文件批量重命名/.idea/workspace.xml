@@ -34,7 +34,7 @@
       <file leaf-file-name="rename2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rename2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="300">
               <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding />
             </state>
@@ -46,16 +46,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+                <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+                <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+                <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="counter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../9.标注角色计数/counter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="counter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../9.标注角色计数/counter.py">
+      <file leaf-file-name="findError.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/findError.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="-50">
+              <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -104,10 +119,11 @@
         <option value="$PROJECT_DIR$/../11.ffmpeg使用/test.py" />
         <option value="$PROJECT_DIR$/rename2.py" />
         <option value="$PROJECT_DIR$/../9.标注角色计数/counter.py" />
+        <option value="$PROJECT_DIR$/findError.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -127,6 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,8 +156,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.counter">
+  <component name="RunManager" selected="Python.findError">
     <configuration name="copyFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -193,7 +209,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="deleteFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="findError" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -205,7 +221,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="10.文件批量重命名" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deleteFile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findError.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,19 +261,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.deleteFile" />
-      <item index="1" class="java.lang.String" itemvalue="Python.counter" />
-      <item index="2" class="java.lang.String" itemvalue="Python.copyFile" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.rename2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.counter" />
+      <item index="1" class="java.lang.String" itemvalue="Python.copyFile" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.rename2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.findError" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.counter" />
-        <item index="1" class="java.lang.String" itemvalue="Python.rename2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.copyFile" />
-        <item index="4" class="java.lang.String" itemvalue="Python.deleteFile" />
+        <item index="0" class="java.lang.String" itemvalue="Python.findError" />
+        <item index="1" class="java.lang.String" itemvalue="Python.counter" />
+        <item index="2" class="java.lang.String" itemvalue="Python.rename2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.copyFile" />
       </list>
     </recent_temporary>
   </component>
@@ -275,12 +291,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88509315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44409937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -305,14 +322,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rename3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rename2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -325,7 +334,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -389,7 +403,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -445,7 +464,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -509,7 +533,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -565,7 +594,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +696,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1512113022235" expanded="true" signature="283:332" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="380:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="430:1025" ph="..." />
+            <marker date="1512113022235" expanded="true" signature="601:1025" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -692,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rename2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="300">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding />
         </state>
@@ -700,8 +739,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../9.标注角色计数/counter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="493">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/findError.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>
