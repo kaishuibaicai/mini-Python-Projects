@@ -36,4 +36,4 @@ for n in nameSets:
 for item in name_counts:
     print item[:-5], name_counts[item]
 
-print noneKnown
+print name_counts

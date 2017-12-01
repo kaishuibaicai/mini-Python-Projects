@@ -3,8 +3,8 @@ import os
 import shutil
 L = []
 
-pathR = "E:\juren-buchong\cartoon_characterDetectionAI_Origin_Video_20171122_00000016_00"
-pathL = "E:\juren-buchong\cartoon_characterDetectionAI_Origin_Video_20171122_00000016_00"
+pathR = "C:\Users\Administrator\Desktop\missions\jinjidejuren\cartoon_characterDetectionAI_Origin_Video_20171122_00000004_00"
+pathL = "C:\Users\Administrator\Desktop\missions\jinjidejuren\cartoon_characterDetectionAI_Origin_Video_20171122_00000004_00"
 
 filesL = os.listdir(pathL)
 for file in filesL:
