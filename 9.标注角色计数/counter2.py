@@ -22,7 +22,7 @@ def extract_character_name_list(xml_file):
 
 
 if __name__ == "__main__":
-    path = 'C:\Users\Administrator\Desktop\missions\jinjidejuren'
+    path = 'E:\The Second\pannideluluxiu'
 
     name_dict = dict()
     for folder in os.listdir(path):
