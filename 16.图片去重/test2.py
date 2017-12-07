@@ -3,7 +3,7 @@ import imagehash
 import difflib
 import os, shutil
 
-path = 'C:\Users\Administrator\Desktop\\testImageSet\\testSet\\'
+path = 'C:\Users\Administrator\Desktop\\testImageSet\\teest\\'
 
 
 def ImageHash(path):
@@ -19,10 +19,8 @@ images = os.listdir(path)
 h = ''
 for image in images:
 	h2 = ImageHash(path + image)
-	#print h2
+	print h2
 	simiValue = difflib.SequenceMatcher(None, h, h2).ratio()
-	if simiValue >= 0.5:
-		shutil.move(path + image, "C:\Users\Administrator\Desktop\\testImageSet\similarImage") 
-		print '{}  [moved]'.format(path + image)
+	print simiValue
 		
 	h = h2
