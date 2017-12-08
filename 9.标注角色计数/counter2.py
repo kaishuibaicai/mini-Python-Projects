@@ -37,6 +37,7 @@ if __name__ == "__main__":
                     name_dict[name] = 0
                 name_dict[name] += 1
     for name, count in name_dict.items():
-        print('%s\t%d' % (name, count))
+        if name.endswith('-head'):
+            print('%s\t%d' % (name, count))
 
         

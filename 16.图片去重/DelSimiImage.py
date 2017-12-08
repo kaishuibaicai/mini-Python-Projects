@@ -1,3 +1,4 @@
+#-*-coding:utf-8-*-
 from PIL import Image
 import imagehash
 import difflib
@@ -15,9 +16,9 @@ def ImageHash(path):
 for dir in os.listdir(path):
 	h = ''
 	for image in os.listdir(path + dir):
-		h2 = ImageHash(path + dir + image)
+		h2 = ImageHash(path + dir + '\\' + image)
 		simiValue = difflib.SequenceMatcher(None, h, h2).ratio()
 		if simiValue >= simiCtrl:
-			os.remove(path + image) 
+			os.remove(path + dir + '\\' + image)
 			print '{}  [deleted]'.format(image)	
 		h = h2
