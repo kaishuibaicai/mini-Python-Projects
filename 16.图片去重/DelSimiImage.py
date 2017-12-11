@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\The Second\pannideluluxiu\\new\\'
+path = 'E:\The Second\\new\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):
@@ -20,5 +20,5 @@ for dir in os.listdir(path):
 		simiValue = difflib.SequenceMatcher(None, h, h2).ratio()
 		if simiValue >= simiCtrl:
 			os.remove(path + dir + '\\' + image)
-			print '{}  [deleted]'.format(image)	
+			print ('{}  [deleted]'.format(image))	
 		h = h2
