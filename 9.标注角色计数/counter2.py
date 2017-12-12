@@ -21,7 +21,7 @@ def extract_character_name_list(xml_file):
     return name_list
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     path = 'E:\The Second\pannideluluxiu'
 
     name_dict = dict()
