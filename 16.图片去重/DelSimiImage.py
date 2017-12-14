@@ -4,8 +4,8 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\叛逆的鲁鲁修\米蕾\\'
-simiCtrl = 0.65  # 相似度阈值控制
+path = 'E:\The Second\shenqibaobei\\'
+simiCtrl = 0.75  # 相似度阈值控制
 
 def ImageHash(path):
 	image = Image.open(path)
