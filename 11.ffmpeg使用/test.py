@@ -4,7 +4,7 @@ import os, subprocess
 def cut_image(resource_path, output_file_path, output_record):
 
     files = os.listdir(resource_path)
-    index = 26
+    index = 3
     for file in files:
         file_path = os.path.join(resource_path, file)
         if os.path.isdir(file_path):
@@ -12,7 +12,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         index += 1
 
-        pre_file_name = 'cartoon_characterdetectionai_Origin_Video_20171129_000006' + '%02d' % index + '_00'
+        pre_file_name = 'cartoon_characterdetectionai_Origin_Video_20171129_000007' + '%02d' % index + '_00'
         output_path = os.path.join(output_file_path, pre_file_name)
         with open("E:\The Second\\nameList.txt", 'a+') as s:
             s.write('%s\t%s\n' % (file, pre_file_name))
@@ -24,7 +24,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
  
-rp = 'E:\叛逆的鲁鲁修\米蕾'
-op = 'E:\叛逆的鲁鲁修\米蕾'
+rp = 'E:\神奇宝贝'
+op = 'E:\神奇宝贝'
 rc = 'nameList'
 cut_image(rp, op, rc)
