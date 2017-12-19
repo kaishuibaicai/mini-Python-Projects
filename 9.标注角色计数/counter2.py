@@ -22,7 +22,7 @@ def extract_character_name_list(xml_file):
 
 
 if __name__ == "__main__": 
-    path = 'E:\The Second\死亡笔记Death Note\Death Note'
+    path = 'C:\\Users\Administrator\Desktop\Sword Art Online'
 
     name_dict = dict()
     for folder in os.listdir(path):
