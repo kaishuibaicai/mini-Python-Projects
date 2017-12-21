@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\神奇宝贝\\'
+path = 'E:\The Second\\new\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):
