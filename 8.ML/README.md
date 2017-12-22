@@ -1,4 +1,5 @@
-#相关资料
+#相增强学习、增量学习、迁移学习——概念性认知关资料
+
 ---
 1.[图像标注工具labelImg安装方法（win10+Python3.5）](http://blog.csdn.net/u010807846/article/details/73480628)
 2.[机器学习十大经典算法](http://blog.csdn.net/jirongzi_cs2011/article/details/9531297)
@@ -14,3 +15,5 @@
 9.[visualization](https://pandas.pydata.org/pandas-docs/stable/visualization.html)
 
 10.[mglearn未定义的解决办法](https://github.com/amueller/mglearn)
+
+11.[增强学习、增量学习、迁移学习——概念性认知](http://blog.csdn.net/zyazky/article/details/51942135)
