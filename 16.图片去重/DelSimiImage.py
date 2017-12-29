@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\The Second\\new\\'
+path = 'C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):
