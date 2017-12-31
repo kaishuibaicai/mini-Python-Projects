@@ -22,7 +22,7 @@ def extract_character_name_list(xml_file):
 
 
 if __name__ == "__main__": 
-    path = 'C:\\Users\Administrator\Desktop\missions\\toy\\toy'
+    path = 'C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹'
 
     name_dict = dict()
     for folder in os.listdir(path):
@@ -37,5 +37,7 @@ if __name__ == "__main__":
                     name_dict[name] = 0
                 name_dict[name] += 1
     for name, count in name_dict.items():
-        #if name.endswith('-head'):
-        print('%s\t%d' % (name, count))
+        if name.endswith('-head'):
+            print('%s\t%d' % (name, count))
+
+print ('2018,相信未来！')
