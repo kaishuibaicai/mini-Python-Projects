@@ -127,7 +127,7 @@ def has_die(x_in):
         x_in[0][len(x_in[0]) - 1][0][0] < 0.4) and (x_in[0][len(x_in[0]) - 1][len(x_in[0][0]) - 1][0] < 0.4):
         return True
     else:
-        return False
+        return False 
 
 
 # 游戏失败后重新开始，(540，1588)为1080*1920分辨率手机上重新开始按钮的位置
