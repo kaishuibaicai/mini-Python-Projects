@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\The Second\\new\\'
+path = 'E:\美少女战士\新建文件夹\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):
