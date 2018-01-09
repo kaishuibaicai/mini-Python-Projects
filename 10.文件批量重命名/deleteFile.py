@@ -1,23 +1,24 @@
 # -*- coding: utf-8 -*-
 import os
 import shutil
-L = []
 
-pathR = "C:\\Users\Administrator\Desktop\missions\\toy\\toy\Luffy"
-pathL = "C:\\Users\Administrator\Desktop\missions\\toy\\toy\Luffy"
+path = 'C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\\'
+#pathR = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
+#pathL = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
+for dir in os.listdir(path):
+	L = []
+	
+	for file in os.listdir(path + dir):
+		if file.endswith('xml'):
+			L.append(file[0:98])
 
-filesL = os.listdir(pathL)
-for file in filesL:
-	if file.endswith('xml'):
-		L.append(file[0:82])
-
-filesR = os.listdir(pathR)
-for file in filesR:
-	if file.endswith('jpg') and file[0:82] not in L:
-		print ("hey:")
-		#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
-		os.remove(pathR + '\\' + file)
-		print (file, '	deleted')
+	
+	for file in os.listdir(path + dir):
+		if file.endswith('jpg') and file[0:98] not in L:
+			print ("hey:")
+			#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
+			os.remove(path + dir + '\\' + file)
+			print (file, '	deleted')
 #print L
 # for dir in dirs:
 # 	#with open("C:\Users\Administrator\Desktop\DirList.txt", 'a+') as s:
