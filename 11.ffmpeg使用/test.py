@@ -4,7 +4,7 @@ import os, subprocess
 def cut_image(resource_path, output_file_path, output_record):
 
     files = os.listdir(resource_path)
-    index = 7
+    index = 14
     for file in files:
         file_path = os.path.join(resource_path, file)
         if os.path.isdir(file_path):
@@ -24,7 +24,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         subprocess.call(['ffmpeg', '-i', file_path, '-r', '1', output_file_name])  # 抽帧命令
  
-rp = 'E:\美少女战士'
-op = 'E:\美少女战士'
+rp = 'E:\美少女战士\新建文件夹'
+op = 'E:\美少女战士\新建文件夹' 
 rc = 'nameList'
 cut_image(rp, op, rc)
