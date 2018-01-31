@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'E:\美少女战士\新建文件夹\\'
+path = 'H:\Youku Files\\transcode\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):

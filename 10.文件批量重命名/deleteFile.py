@@ -2,7 +2,7 @@
 import os
 import shutil
 
-path = 'E:\The Second\钢之炼金术师\cartoon_characterdetectionai_Origin_Video_20180122_00000040_00\\'
+path = 'E:\The Second\钢之炼金术师\新建文件夹\\'
 #pathR = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 #pathL = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 for dir in os.listdir(path):
@@ -10,11 +10,11 @@ for dir in os.listdir(path):
 	
 	for file in os.listdir(path + dir):
 		if file.endswith('xml'):
-			L.append(file[0:98])
+			L.append(file[:-3])
 
 	
 	for file in os.listdir(path + dir):
-		if file.endswith('jpg') and file[0:98] not in L:
+		if file.endswith('jpg') and file[:-3] not in L:
 			print ("hey:")
 			#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
 			os.remove(path + dir + '\\' + file)
