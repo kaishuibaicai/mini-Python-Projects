@@ -2,7 +2,7 @@
 import os
 import shutil
 
-path = 'E:\The Second\钢之炼金术师\新建文件夹\\'
+path = 'H:\标注任务\\new\\'
 #pathR = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 #pathL = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 for dir in os.listdir(path):
