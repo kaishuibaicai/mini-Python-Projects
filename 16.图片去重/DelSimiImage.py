@@ -4,7 +4,7 @@ import imagehash
 import difflib
 import os
 
-path = 'H:\标注任务\新建文件夹\新建文件夹\\'
+path = 'H:\家庭教师\\task\\'
 simiCtrl = 0.65  # 相似度阈值控制
 
 def ImageHash(path):

@@ -4,7 +4,7 @@ import os, subprocess
 def cut_image(resource_path, output_file_path, output_record):
 
     files = os.listdir(resource_path)
-    index = 0
+    index = 4
     for file in files:
         file_path = os.path.join(resource_path, file)
         if os.path.isdir(file_path):
@@ -14,7 +14,7 @@ def cut_image(resource_path, output_file_path, output_record):
 
         pre_file_name = 'cartoon_characterdetectionai_Origin_Video_201800208_000000' + '%02d' % index + '_00'
         output_path = os.path.join(output_file_path, pre_file_name)
-        with open("E:\The Second\\nameList.txt", 'a+') as s:
+        with open("H:\家庭教师\\nameList.txt", 'a+') as s:
             s.write('%s\t%s\n' % (file, pre_file_name))
 
         os.mkdir(output_path)
