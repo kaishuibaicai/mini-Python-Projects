@@ -1,12 +1,16 @@
 #-- coding:utf-8 --
+import re
+
 
 def getlist(url):
 	f = open(url)
 	L = []
 	for line in f.readlines():
 		if line is not '\n':
-			print (line.lstrip().lstrip('0')[:4])	#这里的.lstrip()是去除字符串开头的空格，.rstrip()是去除字符串末尾的空格
-
+			line = line.lstrip().lstrip('0')[:4]	#这里的.lstrip()是去除字符串开头的空格，.rstrip()是去除字符串末尾的空格
+			Line = re.findall(r"\d+",line)
+			if Line:
+				print (Line[0])
 
 
 if __name__ == '__main__':
