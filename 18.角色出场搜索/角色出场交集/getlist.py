@@ -5,7 +5,7 @@ def getlist(url):
 	L = []
 	for line in f.readlines():
 		if line is not '\n':
-			print (line.lstrip()[:4])	#这里的.lstrip()是去除字符串开头的空格，.rstrip()是去除字符串末尾的空格
+			print (line.lstrip().lstrip('0')[:4])	#这里的.lstrip()是去除字符串开头的空格，.rstrip()是去除字符串末尾的空格
 
 
 
