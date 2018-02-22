@@ -12,7 +12,7 @@ def getlist(url):
 			if Line:
 				#print (Line[0])
 				L.append(Line[0])
-	print (L)
+	return L
 
 
 if __name__ == '__main__':
