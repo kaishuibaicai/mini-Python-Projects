@@ -14,4 +14,6 @@ def getInter(url):
 
 if __name__ == '__main__':
 	url = 'C:\\Users\\Administrator\\Desktop\\mini-Python-Projects\\18.角色出场搜索\\角色出场交集\\files'
-	print (getInter(url))
+	#print (getInter(url))
+	for i in getInter(url):
+		print ('第' + i + '集')
