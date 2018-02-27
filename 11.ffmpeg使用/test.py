@@ -4,7 +4,7 @@ import os, subprocess
 def cut_image(resource_path, output_file_path, output_record):
 
     files = os.listdir(resource_path)
-    index = 4
+    index = 9
     for file in files:
         file_path = os.path.join(resource_path, file)
         if os.path.isdir(file_path):
