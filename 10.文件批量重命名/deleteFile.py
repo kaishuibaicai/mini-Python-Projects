@@ -17,7 +17,7 @@ for dir in os.listdir(path):
 		if file.endswith('jpg') and file[:-3] not in L:
 			print ("hey:")
 			#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
-			os.remove(path + dir + '\\' + file)
+			#os.remove(path + dir + '\\' + file)
 			print (file, '	deleted')
 #print L
 # for dir in dirs:
