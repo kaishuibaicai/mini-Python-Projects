@@ -2,7 +2,7 @@
 import os
 import shutil
 
-path = 'H:\家庭教师\\task\\'
+path = 'H:\死神\\task\\'
 #pathR = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 #pathL = "C:\\Users\Administrator\Desktop\missions\哆啦A梦Preprocessing\新建文件夹\mgdm_characterDetectionAI_Origin_Video_20171108_00000013_00"
 for dir in os.listdir(path):
@@ -17,7 +17,7 @@ for dir in os.listdir(path):
 		if file.endswith('jpg') and file[:-3] not in L:
 			print ("hey:")
 			#shutil.copyfile(pathR + '\\' + file,"C:\Users\Administrator\Desktop\cosData\\notL\\" + file)	
-			#os.remove(path + dir + '\\' + file)
+			os.remove(path + dir + '\\' + file)
 			print (file, '	deleted')
 #print L
 # for dir in dirs:
