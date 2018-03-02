@@ -5,7 +5,7 @@ import time
 
 
 
-response = urllib.request.urlopen('https://www.bihu.com/404')
+response = urllib.request.urlopen('https://www.bihu.com/article/404')
 print (response.getcode())
 html = response.read()
 
