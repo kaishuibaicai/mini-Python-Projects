@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-path = "E:\juren-buchong"
+path = "C:\Users\Administrator\Desktop\label\\new\\fzynt-海澄天\海澄天"
 dirs = os.listdir(path)
 
 for dir in dirs:
@@ -16,6 +16,6 @@ for dir in dirs:
             #newname = '%02d_' % n +  file
 
             os.rename(path + '\\' + dir + '\\' + file, path + '\\' + dir + '\\' + newname)
-
+            print (newname + '  Done')
 
         n = n + 1
