@@ -1,21 +1,33 @@
 # -*- coding: utf-8 -*-
-import os
+import os, shutil
 
-path = "H:\筛选图片"
+path = "H:\新建文件夹\新作品图片(待筛选)"
+tpath = "H:\新建文件夹\新作品图片(待筛选)\\images"
 dirs = os.listdir(path)
-n = 1
+
+c = 1
 for dir in dirs:
+    
     
     #with open("C:\Users\Administrator\Desktop\DirList.txt", 'a+') as s:
     #			s.write(str(n) + "    " + dir + '\n')
-    for file in os.listdir(path + '\\' + dir):
 
-        #if file.endswith('.jpg'):
-        newname = 'comic_20180308_%08d.jpg' % n
-        #newname = file[0:87]  + '_label_20171117_00_00' + '.xml'
-        #newname = '%02d_' % n +  file
+    folder_path = os.path.join(path, dir)
+    if os.path.isdir(path + '\\' + dir) and os.listdir(path + '\\' + dir):
+        
+        for file in os.listdir(path + '\\' + dir):
 
-        os.rename(path + '\\' + dir + '\\' + file, path + '\\' + dir + '\\' + newname)
-        print (newname + '  Done')
+            #if file.endswith('.jpg'):
+            newname = 'comic_20180312_%08d.jpg' % c
+            #newname = file[0:87]  + '_label_20171117_00_00' + '.xml'
+            #newname = '%02d_' % n +  file
 
-        n = n + 1
+            old_name_path = os.path.join(folder_path, file)
+            new_name_path = os.path.join(tpath, newname)
+            #os.rename(old_name_path, new_name_path)
+            shutil.copyfile(old_name_path, new_name_path)
+
+            print (newname + '  Done')
+            with open(path + "\\nameList.txt", 'a+') as s:
+                s.write(newname + '\t' + dir + '\n')
+            c += 1
