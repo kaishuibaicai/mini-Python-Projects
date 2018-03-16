@@ -2,8 +2,8 @@ import os, shutil
 
 
 pathp = 'H:\标注管理\\images\\0312\\pictures'
-pathl = 'H:\标注管理\\images\\0312\\xml'
-pathr = 'H:\标注管理\\images\\0312\\results'
+pathl = 'H:\标注管理\\images\\0312\\xml2'
+pathr = 'H:\标注管理\\images\\0312\\results2'
 
 p = []
 l = []
