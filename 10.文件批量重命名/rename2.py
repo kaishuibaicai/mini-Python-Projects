@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os, shutil
 
-path = "H:\新建文件夹\新作品图片(待筛选)"
-tpath = "H:\新建文件夹\\acg\ACGimages"
+path = "H:\新建文件夹\\acg"
+tpath = "H:\新建文件夹\\ACGimages"
 dirs = os.listdir(path)
 
 c = 730
@@ -27,7 +27,7 @@ for dir in dirs:
             #os.rename(old_name_path, new_name_path)
             shutil.copyfile(old_name_path, new_name_path)
 
-            print (newname + '  Done')
+            print (dir, file, newname + '  Done')
             with open(path + "\\nameList.txt", 'a+') as s:
                 s.write(newname + '\t' + dir + '\n')
             c += 1
