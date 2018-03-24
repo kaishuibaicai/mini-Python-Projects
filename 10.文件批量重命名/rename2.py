@@ -2,10 +2,10 @@
 import os, shutil
 
 path = "H:\新建文件夹\新作品图片(待筛选)"
-tpath = "H:\新建文件夹\新作品图片(待筛选)\\images"
+tpath = "H:\新建文件夹\\acg\ACGimages"
 dirs = os.listdir(path)
 
-c = 1
+c = 730
 for dir in dirs:
     
     
@@ -18,7 +18,7 @@ for dir in dirs:
         for file in os.listdir(path + '\\' + dir):
 
             #if file.endswith('.jpg'):
-            newname = 'comic_20180312_%08d.jpg' % c
+            newname = 'comic_20180307_%08d.jpg' % c
             #newname = file[0:87]  + '_label_20171117_00_00' + '.xml'
             #newname = '%02d_' % n +  file
 
