@@ -2,15 +2,38 @@ import os, shutil
 
 basePath = 'H:\标注管理\\images\\0327舞蹈动作\图片收集'
 picPath = 'H:\标注管理\\images\\0327舞蹈动作\pictures'
+taskLPath = 'H:\标注管理\\images\\0327舞蹈动作\任务分配\\taskList\\'
 
 c = 1
 for people in os.listdir(basePath):
 	peopleList = os.listdir(os.path.join(basePath, people))
+
+	taskFile = taskLPath + people[0:2] + '.txt'
+	if os.path.exists(taskFile):
+		os.remove(taskFile)
+	tf = open(taskFile, 'a+')
+	tf.write('task_20180330_' + people[0:2] + '\n')
+	tf.write('[')
 	for dirs in peopleList:
-		if dirs:
-			picList = os.listdir(os.path.join(basePath, people, dirs))
-			for file in picList:
-				newname = 'pose_20180330_' + people[0:2] + '%06d.jpg' % c
-				shutil.copyfile(os.path.join(basePath, people, dirs, file), os.path.join(picPath, newname))
-				print (newname, 'Done')
-				c += 1
+
+		
+		picList = os.listdir(os.path.join(basePath, people, dirs))
+		for file in picList:
+			newname = 'pose_20180330_' + people[0:2] + '%06d.jpg' % c
+			#shutil.copyfile(os.path.join(basePath, people, dirs, file), os.path.join(picPath, newname))
+			tf.write('"static/img/20180330/%s",\n' % newname)
+			#print (newname, 'Done')
+			c += 1
+	
+					
+	tf.close()
+
+	with open(taskFile) as tf:
+		rl = tf.readlines()
+		lastline = rl[len(rl)-1].replace(',\n', ']')
+		
+		rl = rl[:-1]#.append(lastline)
+		rl.append(lastline)
+	
+	with open(taskFile, 'w') as tf:
+		tf.writelines(rl)
