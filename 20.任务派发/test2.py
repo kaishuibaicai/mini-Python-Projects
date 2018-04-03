@@ -4,7 +4,7 @@ path = 'H:\标注管理\images\\0321\\pictures'
 files = os.listdir(path)
 for i in range(len(files)):
 	if (i+1) % 20 == 1:
-		print ('task_20180330_%02d' % n )
+		print ('task_20180403_%02d' % n )
 		n += 1
 	
 email = ['2923204011@qq.com',
