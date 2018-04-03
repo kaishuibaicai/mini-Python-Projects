@@ -1,13 +1,13 @@
 import os, shutil
 
 
-pathp = 'H:\标注管理\\images\\0315\\pictures'
-pathl = 'H:\标注管理\\images\\0315\\points3'
-pathr = 'H:\标注管理\\images\\0315\\results3'
-pathb = 'H:\标注管理\\images\\0315\\boxes3'
+pathp = 'H:\标注管理\\images\\0321\\pictures'
+pathl = 'H:\标注管理\\images\\0321\\points'
+pathr = 'H:\标注管理\\images\\0321\\results'
+pathb = 'H:\标注管理\\images\\0321\\boxes'
 
 
-task_done = open('H:\标注管理\\images\\0315\\task-done.txt','r', encoding='UTF-8')
+task_done = open('H:\标注管理\\images\\0321\\task_done.txt','r', encoding='UTF-8')
 
 '''
 for i in task_done.readline():
