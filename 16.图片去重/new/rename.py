@@ -1,5 +1,8 @@
 import os
 c = 1
+
+
+
 path = 'H:\新建文件夹\\duitang\\duitang'
 for i in os.listdir(path):
 	if not i.endswith('.jpg'):
