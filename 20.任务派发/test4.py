@@ -1,7 +1,12 @@
-import os
+import re 
 
 
-for i in os.listdir('H:\标注管理\\images\\0321\pictures'):
-	a = '"static/img/20180308/%s",' % i
-	print (a)
+txt='pose_20180330_1200194.fffff'
 
+
+
+rg = re.compile('(pose_\\d+_\\d+)',re.IGNORECASE|re.DOTALL)
+m = rg.search(txt)
+if m:
+
+    print (m.group())
