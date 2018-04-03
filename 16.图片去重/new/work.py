@@ -1,5 +1,6 @@
 import os, hashlib
-c = 1
+
+
 
 
 with open('C:\\Users\\Administrator\\Desktop\\mini-Python-Projects\\16.图片去重\\new\\output_file.txt') as of:
