@@ -48,5 +48,7 @@ if __name__ == '__main__':
 	if os.path.exists(pathres):
 		shutil.rmtree(pathres)
 		os.mkdir(pathres)
+	else:
+		os.mkdir(pathres)
 	for i in task_done:
 		task_trans(i)
