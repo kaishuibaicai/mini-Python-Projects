@@ -1,25 +1,51 @@
 import urllib.request
+import requests
 import re
+import os
 
-def getID(pageurl)
+headers = { 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+			'Accept-Encoding': 'gzip, deflate, br',
+			'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+			'Cache-Control': 'max-age=0',
+			'Connection': 'keep-alive',
+			'Host': 'p1.pstatp.com',
+			'Upgrade-Insecure-Requests': '1',
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
+saveImgPath = 'H:\\face\亚洲人脸\\'
+
+def getID(pageurl):
 	f = urllib.request.urlopen(pageurl)
 	result = f.read().decode('utf-8')
-	print (result)
-	print (type(result))
+	#print (result)
+	#print (type(result))
 	rg = re.compile(r'imageId":"(\d+)')
-	re = rg.findall(result)
-	if re:
-		for i in re:
+	result = rg.findall(result)
+	if result:
+		for i in result:
 			saveImg(i)
 
 def saveImg(id):
-	url = 'https//p1.pstatp.com/weili/ms/' + id + '.webp'
-	response = requests.get(url)
+
+	url = 'https://p1.pstatp.com/weili/ms/' + id + '.webp'
+	
+	response = requests.get(url, headers=headers)
 	if response.status_code == 200:
-		file_path = '{0}/{1}.{2}'.format(item.get('title'), md5(response.content).hexdigest(), 'jpg')
-		if not os.path.exists(file_path):
-			with open(file_path, 'wb')as f:
+		filepath = saveImgPath + id + '.jpg'
+		with open(filepath, 'wb')as f:
 			f.write(response.content)
+		print (id, 'Downloaded')
+	else:
+		print (id, '404')
+	
+	
 
 
-'https://stock.tuchong.com/search?use=0&type=&layout=&sort=0&category=146%2C209%2C2016&page=1&size=100&search_from=&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=2&face_num=&gender=0&age=&racial=3'
+if __name__ == '__main__':
+	p = 1
+	while 1:
+		pageurl = 'https://stock.tuchong.com/search?use=0&type=&layout=&sort=0&category=146%2C209%2C2016&page={0}&size=100&search_from=&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=2&face_num=&gender=0&age=&racial=3'.format(str(p))
+		print ('【page: %d】' % p)
+		getID(pageurl)
+		p += 1
+		if p > 50:
+			break
