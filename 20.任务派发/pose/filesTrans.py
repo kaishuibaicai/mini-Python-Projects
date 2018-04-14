@@ -1,6 +1,6 @@
 import os, shutil
 
-basePath = 'H:\标注管理\\images\\0327舞蹈动作\图片收集'
+basePath = 'H:\标注管理\\images\\0411舞蹈动作\图片收集'
 picPath = 'H:\标注管理\\images\\0327舞蹈动作\pictures'
 taskLPath = 'H:\标注管理\\images\\0327舞蹈动作\任务分配\\taskList\\'
 
