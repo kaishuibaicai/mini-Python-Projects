@@ -1,10 +1,10 @@
 import os, shutil
 baseP = 'H:\标注管理\\images\\0411舞蹈动作'
-basePath = os.path.join(baseP, '图片收集')
-picPath = os.path.join(baseP, 'pictures')
-taskLPath = os.path.join(baseP, 'taskList\\')
+basePath = os.path.join(baseP, '图片收集2')
+picPath = os.path.join(baseP, 'pictures2')
+taskLPath = os.path.join(baseP, 'taskList2\\')
 
-c = 1
+c = 614
 for people in os.listdir(basePath):
 	peopleList = os.listdir(os.path.join(basePath, people))
 

@@ -1,17 +1,17 @@
 import os, random, shutil
 
-picPath = 'H:\标注管理\\images\\0403\\images'
-tpicPath = 'H:\标注管理\\images\\0403\\img'
-taskPath = 'H:\标注管理\\images\\0403\\tasklist'
+picPath = 'H:\标注管理\\images\\0417人脸标注\\safeFiles'
+tpicPath = 'H:\标注管理\\images\\0417人脸标注\\pictures'
+taskPath = 'H:\标注管理\\images\\0417人脸标注\\tasklist'
 
 
-def rename(path, tpath):
+def rename(path, tpath, filename):
 	files = os.listdir(path)
 	random.shuffle(files)
 	n = 1
 	for i in files:
 		oldp = os.path.join(path, i)
-		newname= 'comic_20180403_%08d.jpg' % n 
+		newname= filename + '%08d.jpg' % n 
 		newp = os.path.join(tpath, newname)
 		shutil.copyfile(oldp, newp)
 		print(newname, '[name changed]')
@@ -37,5 +37,5 @@ def geneTList(per_count, prelatters, taskname, tPath, tlPath):
 			tf.write(prelatters + files[i]+ '",\n')
 
 if __name__ == '__main__':
-	#rename(picPath, tpicPath)
-	geneTList(187, '"static/img/20180403/', 'task_20180403_', tpicPath, taskPath)
+	rename(picPath, tpicPath, 'comic_20180417_')
+	geneTList(88, '"static/img/20180417/', 'task_20180417_', tpicPath, taskPath)

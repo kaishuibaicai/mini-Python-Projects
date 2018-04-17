@@ -239,6 +239,6 @@ if __name__ == '__main__':
     print("下载结果保存在脚本目录下的results文件夹中。")
     print("=" * 50)
     #word = input("请输入你要下载的图片关键词：\n")
-    word = "犬夜叉桔梗"
+    word = "闭眼"
     down = BaiduImgDownloader(word)
     down.start()
