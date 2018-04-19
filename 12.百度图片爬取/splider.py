@@ -74,20 +74,21 @@ def logging_init():
 
 if __name__ == '__main__':
     logging_init()
-    key_words = ['六道骸','沢田纲吉','狱寺隼人','山本武','云雀恭弥','里包恩',
-                 '三浦春','笹川京子','武藤游戏','海马濑人','城之内克也',
-                 '真崎杏子','游戏王本田','貘良了','游戏王舞','黑崎一护',
-                 '朽木露琪亚','井上织姬','阿散井恋次','石田雨龙']
-    key_words2 = ['小丸子','樱桃小丸子姐姐','樱桃小丸子妈妈','樱桃小丸子爸爸',
-                 '樱桃小丸子爷爷','樱桃小丸子奶奶','钢之炼金术师爱德华',
-                 '钢之炼金术师温莉','霍恩海姆 艾尔利克','伊兹米 卡迪斯','斯卡',
-                 'Saber','卫宫士郎','吉尔伽美什','Lancer','伊斯坎达尔']
-    key_words3 = ['自拍大头照']
-    key_words4 = ['动漫男生头像','动漫女生头像']
-    key_words5 = ['动漫主角', '日本动漫人物', '日本动漫']
-    key_words6 = ['证件照 女']
-    key_words7 = ['蜘蛛侠']
-    file_path = '/home/codeadmin/python-workspace/baidu_image_splider/images_face/face_0413/'
-    for word in key_words7:
+    i = 1
+    basepath = 'H:\标注管理\images\动漫角色爬取\第一周角色标注任务'
+    for m in os.listdir(basepath):
+      for a in os.listdir(os.path.join(basepath, m)):
+        curpath = os.path.join(basepath, m, a)
+        file = os.path.join(curpath, 'keywords.txt')
+        print(file)
+        keywords = []
+        with open(file, 'r', encoding='utf-8') as f:
+          keywords = f.readlines()
+        print (i, keywords)
+        i += 1
+
+
+    '''for word in key_words7:
         data_list = get_pages(word, 20)
-        get_images(data_list, file_path, word)
+        get_images(data_list, file_path, word)'''
+
