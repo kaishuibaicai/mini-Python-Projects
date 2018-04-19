@@ -1,8 +1,9 @@
+
 from xml.etree.ElementTree import parse
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-Font = ImageFont.truetype("/Library/Fonts/OsakaMono.ttf", 10)
+font = ImageFont.truetype('simsun.ttc',24)
 filepath = 'H:\标注管理\\images\标注方法介绍\\5\\kenan'
 savepPath = 'H:\标注管理\\images\标注方法介绍\\5\\角色标注示例'
 
@@ -23,6 +24,6 @@ for i in os.listdir(filepath):
 			print (xmin, ymin, xmax, ymax)
 
 			draw.rectangle((xmin, ymin, xmax, ymax), outline='red')
-			draw.text([xmax, ymax], label_name, 'white', font=font)
+			draw.text([xmax, ymax], label_name.encode('utf-8'), font=font)
 		im.save(os.path.join(savepPath, i[:-3] + 'jpg'))
-			
+			 
