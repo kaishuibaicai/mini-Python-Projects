@@ -11,7 +11,7 @@ headers = { 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,ima
 			'Host': 'p1.pstatp.com',
 			'Upgrade-Insecure-Requests': '1',
 			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
-saveImgPath = 'H:\\face\闭眼图片\\'
+saveImgPath = 'H:\\face\风景图片\\'
 
 def getID(pageurl):
 	f = urllib.request.urlopen(pageurl)
@@ -44,7 +44,8 @@ if __name__ == '__main__':
 	p = 1
 	while 1:
 		#pageurl = 'https://stock.tuchong.com/search?use=0&type=&layout=&sort=0&category=146%2C209%2C2016&page={0}&size=100&search_from=&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=2&face_num=&gender=0&age=&racial=3'.format(str(p))
-		pageurl = 'https://stock.tuchong.com/search?term=%E9%97%AD%E7%9C%BC&use=0&type=&layout=&sort=0&category=0&page={0}&size=100&search_from=head&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=0&face_num=&gender=0&age=&racial='.format(str(p))
+		#pageurl = 'https://stock.tuchong.com/search?term=%E9%97%AD%E7%9C%BC&use=0&type=&layout=&sort=0&category=0&page={0}&size=100&search_from=head&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=0&face_num=&gender=0&age=&racial='.format(str(p))
+		pageurl = 'https://stock.tuchong.com/search?term=%E9%A3%8E%E6%99%AF&use=0&type=&layout=&sort=0&category=0&page={0}&size=100&search_from=&exact=0&platform=weili&tp=&abtest=&royalty_free=0&option=&has_person=0&face_num=&gender=0&age=&racial='.format(str(p))
 		print ('【page: %d】' % p)
 		getID(pageurl)
 		p += 1

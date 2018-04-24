@@ -1,6 +1,10 @@
 import os
 
-path = 'C:\\Users\\Administrator\\Desktop\\mini-Python-Projects\\12.百度图片爬取'
+
+i = '夜刀神十香超清壁纸\n_568.jpg'
 
 
-print (os.path.abspath(os.path.join(path, "..")))
+print (i)
+
+
+print (i.replace('\n', ''))
